@@ -43,6 +43,7 @@ def xsapr_clutter(files, clutter_thresh_min=0.0002,
     """
 
     run_stats = _RunningStats()
+    print('OMG! I am generating a clutter field!')
     first_shape = 0
     for file in files:
         radar = pyart.io.read(file)
